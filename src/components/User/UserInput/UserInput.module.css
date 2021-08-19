@@ -1,0 +1,45 @@
+.inputList{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.inputList label{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.inputList input{
+    line-height: 1.3rem;
+    border:1px solid rgb(214, 203, 203)
+}
+
+.userForm{
+    background-color: white;
+    width: 55%;
+    margin: 0 auto;
+    border-radius: 7px;
+}
+
+.main{
+    width:95% ;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.btn button{
+    font-size: 1rem;
+    padding: 4px 15px;
+    color: white;
+    background-color: rgb(104, 2, 100);
+    border: none;
+    cursor: pointer;
+}
+
+.btn button:hover,
+.btn button:active{
+    background-color: rgb(50, 2, 100);
+}
+
+

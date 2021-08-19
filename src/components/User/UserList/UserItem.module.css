@@ -1,0 +1,15 @@
+.text{
+    margin-bottom: 10px;
+    font-weight: bold;
+    border:1px solid rgb(214, 203, 203);
+    width: 95%;
+    margin: auto;
+    padding: 10px 0;
+}
+.main{
+    margin: 10px 0;
+}
+
+.input{
+    margin-left: 10px;
+}
