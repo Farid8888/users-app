@@ -8,19 +8,13 @@ const enteredName = useRef()
 const enteredAge = useRef()
 const [name,setName]= useState('')
 const [age,setAge] =useState('')
-const nameHandler =()=>{
-    setName(enteredName.current.value)
-}
 
-const ageHandler=()=>{
-    setAge(enteredAge.current.value)
-}
 
     const onSubmitHandler=(event)=>{
      event.preventDefault()
      const data ={
-         name:name,
-         age:age,
+         name:enteredName.current.value,
+         age:enteredAge.current.value,
          id:Math.random()
      }
      props.addUser(data)
@@ -32,11 +26,11 @@ const ageHandler=()=>{
            <div className={classes.main}>
            <div className={classes.inputList}>
                <label>Username</label>
-               <input type="text"  ref={enteredName} value={name} onChange={nameHandler}/>
+               <input type="text"  ref={enteredName}/>
            </div>
            <div className={classes.inputList}>
                <label>Age (Years)</label>
-               <input type="number"  ref={enteredAge} value={age} onChange={ageHandler}/>
+               <input type="number"  ref={enteredAge}/>
            </div>
            <div className={classes.btn}>
                <button type="submit">Add User</button>

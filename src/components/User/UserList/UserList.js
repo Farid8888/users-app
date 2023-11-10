@@ -7,7 +7,7 @@ const UserList =(props)=>{
        <div className={classes.List}>
          {props.users.map(user=>{
              return <UserItem key={user.id} id={user.id}
-                               name={user.name} age={user.name}/>
+                               name={user.name} age={user.age}/>
          })}
        </div>
     )
